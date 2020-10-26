@@ -36,10 +36,9 @@ section {
 section h2 {
   font-size: 60px;
   font-family: 'Noto Sans HK', sans-serif;
-  margin-top: 40px;
+  margin-top: 5px;
   margin-bottom: 40px;
   color: #2e2e2e;
-  text-transform: uppercase;
 }
 section h3 {
   font-size: 40px;
