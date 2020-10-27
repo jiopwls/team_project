@@ -55,9 +55,7 @@ $(function () {
     clearInterval(slider);
     console.log('stop');
   }
-  #gnb .depth1 > li >a:hover {
-    color: #d6d887
-  }
+
   sliderStart();
 
   // 마우스가 올라가면 슬라이더 정지
