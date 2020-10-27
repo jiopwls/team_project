@@ -98,7 +98,7 @@ h2 {
 
 /* 2depth menu */
 #gnb .depth2 { 
-    font-size: 16px;
+    font-size: 15px;
     height: 200px;
     background: none;
     display: none;
@@ -113,6 +113,7 @@ h2 {
     color: #fff;
     font-weight: 300;
 }
+
 #gnb .depth2 > li > a:hover {
     color: #d6b887
 }
