@@ -199,7 +199,9 @@ h2 {
 #add_banner > .images_box {
  width: 1920px;
  height: 800px;
- margin: 0 auto;
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
  outline: 2px solid red;
  z-index: 9999;
 }
