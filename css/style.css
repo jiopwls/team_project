@@ -113,11 +113,12 @@ h2 {
     color: #fff;
     font-weight: 300;
 }
-#gnb .depth1 > li > a:hover,
 #gnb .depth2 > li > a:hover {
     color: #d6b887
 }
-
+#gnb .depth1 > li > a:hover {
+  color: #9a886b;
+}
 #main_header > .login {
     position: absolute;
     right: 90px;
