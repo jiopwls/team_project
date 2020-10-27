@@ -113,10 +113,11 @@ h2 {
     color: #fff;
     font-weight: 300;
 }
-#gnb .depth2 > li > a:hover {
+#gnb .depth2 > li > a:hover,
+#gnb .depth1 > li > a:hover {
     color: #d6b887
 }
-
+#gnb .depth1 > li > a:hover 
 #main_header > .login {
     position: absolute;
     right: 90px;
@@ -152,8 +153,6 @@ h2 {
 }
 .sliders > img {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 /* pager */
@@ -185,126 +184,124 @@ h2 {
 }
 
 /* add banner */
-#add_banner  {
-  margin: 0 auto;
-  width: 100%;
-  height: 800px;
-  max-width: 1920px;
-  min-width: 1200px;
-  margin-bottom: 150px;
-  position: relative;
-  overflow: hidden;
-}
+ #add_banner  {
+   margin: 0 auto;
+   width: 100%;
+   height: 800px;
+   max-width: 1920px;
+   min-width: 1200px;
+   margin-bottom: 150px;
+   position: relative;
+   overflow: hidden;
+ }
 
 #add_banner > .images_box {
- width: 1920px;
- height: 800px;
- position: absolute;
- left: 50%;
- transform: translateX(-50%);
- outline: 2px solid red;
- z-index: 9999;
+  width: 1920px;
+  height: 800px;
+  margin: 0 auto;
+  outline: 2px solid red;
+  z-index: 9999;
 }
 #add_banner > .images_box > img:first-child {
-   width: 100%;
-   position: relative;
+    width: 100%;
+    position: relative;
 }
 #add_banner > .images_box > img:nth-child(2) {
- position: absolute;
- top: 310px;
- left: 340px;
+  position: absolute;
+  top: 310px;
+  left: 340px;
 }
 #add_banner > .images_box > img:nth-child(3) {
- position: absolute;
- top: 600px;
- left: 530px;
+  position: absolute;
+  top: 600px;
+  left: 530px;
 }
 #add_banner > .images_box > img:nth-child(4) {
- position: absolute;
- top: 785px;
- left: 510px;
+  position: absolute;
+  top: 785px;
+  left: 510px;
 }
 #add_banner > .images_box > img:nth-child(5) {
- position: absolute;
- top: 750px;
- left: 560px;
+  position: absolute;
+  top: 750px;
+  left: 560px;
 }
 #add_banner > .images_box > img:nth-child(6) {
- position: absolute;
- top: 315px;
- left: 1250px;
+  position: absolute;
+  top: 315px;
+  left: 1250px;
 }
 #add_banner > .images_box > img:nth-child(7) {
- position: absolute;
- top: 665px;
- left: 1155px;
+  position: absolute;
+  top: 665px;
+  left: 1155px;
 }
 #add_banner > .images_box > a img:last-child {
- position: absolute;
- top: 470px;
- left: 830px;
+  position: absolute;
+  top: 470px;
+  left: 830px;
 }
 .images_box >img:nth-child(2),
 .images_box >img:nth-child(6) {
- animation-name: rint;
- animation-duration: 4s;
- animation-timing-function: linear;
- animation-iteration-count: infinite;
- animation-direction: alternate;
+  animation-name: rint;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 
 }
 .images_box >img:nth-child(3) {
- animation-name: rint1;
- animation-duration: 3s;
- animation-timing-function: linear;
- animation-iteration-count: infinite;
- animation-direction: alternate;
+  animation-name: rint1;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .images_box >img:nth-child(4) {
- animation-name: rint2;
- animation-duration: 3.5s;
- animation-timing-function: linear;
- animation-iteration-count: infinite;
- animation-direction: alternate;
+  animation-name: rint2;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .images_box >img:nth-child(5) {
- animation-name: rint4;
- animation-duration: 2.5s;
- animation-timing-function: linear;
- animation-iteration-count: infinite;
- animation-direction: alternate;
+  animation-name: rint4;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .images_box >img:nth-child(7) {
- animation-name: rint3;
- animation-duration: 3s;
- animation-timing-function: linear;
- animation-iteration-count: infinite;
- animation-direction: alternate;
+  animation-name: rint3;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 @keyframes rint {
- 0% {top: 280px;}
- 50% {top:300px}
- 100% {top:280px;}
+  0% {top: 280px;}
+  50% {top:320px}
+  100% {top:280px;}
 }
 @keyframes rint1 {
- 0% {top: 680px;}
- 50% {top:700px}
- 100% {top:680px;}
+  0% {top: 680px;}
+  50% {top:720px}
+  100% {top:680px;}
 }
 @keyframes rint2 {
- 0% {top: 720px;}
- 50% {top:750px}
- 100% {top:720px;}
+  0% {top: 720px;}
+  50% {top:760px}
+  100% {top:720px;}
 }
 @keyframes rint3 {
- 0% {top: 650px;}
- 50% {top:670px}
- 100% {top:650px;}
+  0% {top: 630px;}
+  50% {top:670px}
+  100% {top:630px;}
 }
 @keyframes rint4 {
- 0% {top: 735px;}
- 50% {top:755px}
- 100% {top:735px;}
+  0% {top: 735px;}
+  50% {top:775px}
+  100% {top:735px;}
 }
 
 
@@ -457,7 +454,7 @@ h2 {
     padding-top: 30px;
     padding-bottom: 20px;
 }
-#main_footer h3 a{color: #fff;}
-#main_footer > a img {
+
+#main_footer > img {
     margin: 35px 0 0 0
 }
