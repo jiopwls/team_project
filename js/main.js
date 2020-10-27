@@ -20,7 +20,7 @@ $(function () {
 **/
 $(function () {
   var img_num = 0; // 이미지 번호
-  var duration = 5000; // 인터벌 시간
+  var duration = 3000; // 인터벌 시간
   var slider;   // slider 실행 객체 변수
 
   // 초기화
@@ -55,7 +55,9 @@ $(function () {
     clearInterval(slider);
     console.log('stop');
   }
-
+  #gnb .depth1 > li >a:hover {
+    color: #d6d887
+  }
   sliderStart();
 
   // 마우스가 올라가면 슬라이더 정지
