@@ -340,11 +340,11 @@ h2 {
 }
 
 #news_event {
-  float: left;
+  float: right;
 }
 
 #news_class {
-  float: right;
+  float: left;
 }
 
 #news h3 {
