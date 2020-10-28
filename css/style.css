@@ -41,10 +41,11 @@ h2 {
     left: 0; top: 50%;
     transform: translateY(-50%);
 }
+#main_header > h1 > a > img{width: 85px; height: 85px;}
 .bg {
       position: absolute;
       top: 130px;
-      width: 100%; height: 220px;
+      width: 100%; height: 205px;
       background: rgba(46,46,46,0.8);
       opacity: 0.7;
       display: none;
@@ -52,13 +53,14 @@ h2 {
     }
 
 #gnb {
-    /* outline: 2px solid red; */
+    /* outline: 1px solid red; */
     font-size: 20px;
     position: absolute;
     top: 50px; left: 50%;
     transform: translateX(-50%);
     box-sizing: border-box;
     z-index: 9999;
+    width: 640px;
 }
 #gnb .depth1 {
     box-sizing: border-box;
@@ -76,16 +78,16 @@ h2 {
     width: 150px;
 }
 #gnb .depth1 > li:nth-child(2) {
-    width: 90px;
+    width: 100px;
 }
 #gnb .depth1 > li:nth-child(3) {
-    width: 80px;
+    width: 90px;
 }
 #gnb .depth1 > li:nth-child(4) {
-    width: 130px;
+    width: 140px;
 }
 #gnb .depth1 > li:nth-child(5) {
-    width: 130px;
+    width: 140px;
 }
 
 
@@ -104,9 +106,8 @@ h2 {
     display: none;
     box-sizing: border-box;
 }
-#gnb .depth2 > li {
-    margin-bottom: 10px;
-}
+#gnb .depth2 > li {margin-bottom: 1px;}
+#gnb .depth2 > li:first-child{margin-top: -2px;}
 #gnb .depth2 > li > a {
     display: block;
     padding-top: 15px;
@@ -121,22 +122,26 @@ h2 {
   color: #9a886b;
 }
 #main_header > .login {
-    position: absolute;
-    right: 90px;
+  position: absolute;
+  right: 80px;
+  top: 4px;
 }
 #main_header > .login > a {
-    color: #2e2e2e;
-    line-height: 130px;
-    margin-right: 15px;
-    font-size: 20px;
+  color: #2e2e2e;
+  line-height: 130px;
+  margin-right: 15px;
+  font-size: 14px;
 }
 #main_header > .header_sns {
-    position: absolute;
-    right: 0; top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  right: 0; top: 54%;
+  transform: translateY(-50%);
 }
 #main_header > .header_sns > a {
-    margin-right: 15px;
+  margin-right: 15px;
+}
+#main_header > .header_sns > a > img {
+  width: 20px;
 }
 
 /* main_banner */
@@ -146,7 +151,6 @@ h2 {
   min-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
-
   position: relative;
 }
 
@@ -182,10 +186,10 @@ h2 {
 
 
 /* bx slider 스타일 */
-.bx-wrapper {
+/* .bx-wrapper {
   border: none!important;
   margin-bottom: 0!important;
-}
+} */
 
 /* add banner */
 #add_banner  {
@@ -203,7 +207,7 @@ h2 {
  width: 1920px;
  height: 800px;
  margin: 0 auto;
- outline: 2px solid red;
+ /* outline: 2px solid red; */
  z-index: 9999;
 }
 #add_banner > .images_box > img:first-child {
@@ -308,7 +312,65 @@ h2 {
  100% {top:735px;}
 }
 
+/* 사이드 바 */
 
+section#menu {
+  width: 1200px;
+  margin: 0 auto;
+  /* overflow: hidden; */
+  z-index: 99999;
+}
+
+.menu_nav {
+  /* overflow: hidden; */
+  position: fixed;
+  /* background: #ccc; */
+  display: none;
+  right: 70px;
+  top: 300px;
+  /* outline: 1px solid red; */
+}
+
+.menu_nav > a {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    /* right: 50px; */
+    /* bottom:320px; */
+    /* padding: 5px; */
+    background: #222328;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 100px;
+    /* font-style: italic; */
+}
+
+/* .menu_nav > a:nth-child(2) {
+  line-height: 20px;
+  padding-top: 30px;
+  padding: 5px;
+} */
+
+.menu_nav > a:last-child {
+  width: 40px;
+  margin: 0 auto;
+  height: 30px;
+  border-radius: 0px;
+  border: 1px solid #2e2e2e;
+  background: white;
+  color: #2e2e2e;
+  line-height: 26px;
+}
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
 
 /* NEWS */
 
@@ -390,23 +452,40 @@ h2 {
 
 /* 가맹안내 */
 #fr {
+  /* outline: 1px solid red; */
   clear: both;
+  position: relative;
   margin-top: 150px;
-  width: 1920px;
+  width: 100%;
   height: 500px;
   margin: 0 auto;
+  box-sizing: border-box;
+  background-image: url(../images/franchise.png);
+  overflow: hidden;
+  min-width: 1200px;
+  z-index: -999;
 }
-
-#fr p {
+#fr #fr_text {
+  width: 1200px;
+  /* margin: 0 auto; */
+  position: relative;
+  outline: 1px solid purple;
+}
+#fr #fr_text p {
+  /* outline: 1px solid blue; */
   color: white;
   position: relative;
   bottom: 370px;
   left: 392px;
   font-size: 37px;
   line-height: 55px;
+  width: 500px;
 }
-
-#fr a {
+#fr img {
+  width: 100%;
+  min-height: 500px;
+}
+#fr #fr_text a {
   display: inline-block;
   font-size: 25px;
   width: 200px;
@@ -451,12 +530,17 @@ h2 {
     margin: 10px 0 10px 0;
     font-weight: 300;
     font-size: 15px;
+    /* outline: 1px solid red; */
+    width: 100%;
+    height: 30px;
 }
 #main_footer h3{
     font-weight: 300;
     font-size: 20px;
     padding-top: 30px;
     padding-bottom: 20px;
+    width: 100%;
+    /* outline: 1px solid blue; */
 }
 #main_footer h3 a{color: #fff;}
 #main_footer > a img {

@@ -1,26 +1,27 @@
 /* sub1_3_오시는길.css */
-#map_title_img {
-  max-width: 1920px;
-  min-width: 1200px;
-  margin: 0 auto;
-  /* overflow: hidden; */
-  margin-bottom: 0px;
-  position: relative;
-}
-#map_title_img > h2 {
-  position: absolute;
-  display: block;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 70px;
-  font-weight: bold;
-  font-family: 'Noto serif', sans-serif;
-  font-style: italic;
-}
-#map_title_img > img {
-  width: 100%;
-  min-height: 400px;
+#title_img {
+    max-width: 1920px;
+    min-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+    margin-bottom: 0px;
+    position: relative;
+  }
+  #title_img h2 {
+    position: absolute;
+    display: block;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Noto serif', sans-serif;
+    font-style: italic;
+  }
+#title_img > img {
+    width: 100%;
+    min-height: 400px;
 }
 
 section#title {
@@ -52,14 +53,41 @@ section > img {
   height: 500px;
 }
 
+/* lnb */
+#sub1_3_lnb {
+    width: 1200px;
+    margin:  0 auto;
+}
+#sub1_3_lnb li {
+    float: left;
+    width: calc(1200px / 3);
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: #efefef;
+    margin-bottom: 30px;
+}
+#sub1_3_lnb li:last-child {
+    margin-right: 0;
+}
+#sub1_3_lnb li a {
+    font-size: 20px;
+    display: block;
+}
+#sub1_3_lnb li a:hover,
+#sub1_3_lnb .active,
+#sub1_3_lnb .active > a  {
+    color: #fff;
+    background: #9A886B;
+}
 
 /* breadcrumb */
 .location {
-  width: 1200px;
-  margin: 0 auto;
-  margin-top: 15px;
-  color: #787878;
-  padding-bottom: 120px;
+    width: 1200px;
+    margin: 0 auto;
+    color: #787878;
+    text-align: right;
+    padding-bottom: 100px;
 }
 
 #map > img {
